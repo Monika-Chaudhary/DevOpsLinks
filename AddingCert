@@ -1,0 +1,28 @@
+Adding certs to jdk cacerts:
+
+Step 1 - Download certificate
+	a. Clicking padlock of site
+	b. Connection is secure
+	c. Certificate is valid
+	d. Go to 'details' section
+	e. Export
+	
+Step 2 - 
+	a. Click on downloaded certificate
+	b. Go to 'Details' section
+	c. Click on 'Copy to File'
+	d. Click Next
+	e. Select format then click Next
+	f. Browse location for certificate
+	g. Finish
+
+Step 3 -
+"keytoolLocation" -trustcacerts -keystore "jreCacertsPath" -storepass password -importcert -alias anyNameOfCert -file certDerPath
+
+"C:\Program Files\Java\jdk1.8.0_221\bin\keytool" -trustcacerts -keystore "C:\Program Files\Java\jre1.8.0_221\lib\security\cacerts" -storepass changeit -importcert -alias nexus3 -file C:\Downloads\nexus3.der
+
+
+To check list of certificate -
+List : keytool -list -keystore "C:\Program Files\Java\jre1.8.0_221\lib\security\cacerts"
+
+Delete : keytool -delete -noprompt -trustcacerts -alias "nexus-ssl" -keystore "C:\Program Files\Java\jre1.8.0_221\lib\security\cacerts"

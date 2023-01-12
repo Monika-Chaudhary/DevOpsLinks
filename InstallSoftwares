@@ -1,0 +1,37 @@
+Virtualbox : sudo apt install virtualbox
+
+Vagrant : 
+	wget https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+   	sudo apt install ./vagrant_2.2.14_x86_64.deb
+   	
+Git : sudo apt install git
+
+Jdk
+
+Maven : sudo apt-get install maven
+
+AWS Cli : sudo apt-get install awscli
+
+Eclipse
+
+Jenkins :
+	wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+  	sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+	sudo apt update
+ 	sudo apt install jenkins
+ 	sudo systemctl start jenkins.service
+ 	sudo systemctl status jenkins
+	sudo systemctl status jenkins
+	sudo ufw allow 8080
+	udo ufw enable
+	sudo ufw status
+ 	sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+ 	
+GoDaddy : purchase domain
+
+DockerHub
+	
+
+
+
+
