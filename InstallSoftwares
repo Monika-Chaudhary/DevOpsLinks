@@ -7,6 +7,10 @@ Vagrant :
 Git : sudo apt install git
 
 Jdk
+If want to upgrade Java from 8 to 11
+	give root permission to all -> chown -R root:root /pathToJdk/bin
+	sudo update-alternatives --config-java
+		(choose repsective java version)
 
 Maven : sudo apt-get install maven
 
