@@ -1,0 +1,33 @@
+1. Git resolve merge conflict:
+   git checkout devBranch
+   git merge relBranch
+   git checkout relBranch
+   git merge --no-ff devBranch
+   
+   git push origin relBranch
+  
+2. SonarQube:
+   start the server in bg -> /postgreSQL/pgsql/bin/postmaster -D /postgreSQL/pgsql/data/ >logfile 2>&1 &
+   {db server program called postmaster, postmaster must know where to find data (-D refer for data)}
+   
+3. Speedy:
+   Aggregated dashboard -> for labview 
+   Engg dashobaord -> related to DevOps specific tool it's working, performing, doing...
+   Team dashboard -> JIRA
+                      divided into 3 parts:
+                        i. Engineering
+                        ii. Speed
+                        iii. Quality
+                        
+4. UCD:
+    help team :
+      how to trigger deployment, map components, do approve process & create snapshots
+      create version, addiing version, kick off application process deployment to lowermost env as part of Continuous delivery
+      work like agent based(as need to have agent installed on target environment where u want to connect & deploy so it can communicate from urbancode server)
+      server -> communicate to client (basically an agent or node on which ucd agent is installed, these are agentless deployment server where SSH aunthenticate with something like we do Ansible but here we used agent based deployment)
+      
+      history ->
+        under history, click on Request process of particular process, go to manifest, show version, verify this version with Component version of snapshots
+      Components -> 
+        IHS owned by WAS team (use standard template)
+   
