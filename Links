@@ -28,12 +28,14 @@ BitBucket-
 Linux- 
   https://www.xmind.net/m/WwtB/
   cheatsheet : https://medium.com/@swapnilingale31/linux-commands-cheatsheet-cac3c70845e2
+  free course : https://training.linuxfoundation.org/resources/
 
 Git Repo-
   https://github.com/shreys7/django-todo
   https://github.com/bregman-arie/devops-exercises
   https://github.com/devopshydclub/vprofile-project
   imnowdevops/ddc-material
+  https://github.com/annfelix/DEVOPS-WORLD
 
 Git-
   https://gitexplorer.com/
@@ -53,10 +55,28 @@ DevOps Projects :-
   https://github.com/devopsacademyau/academy
   https://github.com/MichaelCade/90DaysOfDevOps/tree/main/Days
   https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS
+  https://devopsrealtime.com/deploy-java-application-on-aws-3-tier-architecture/
+  https://devopsrealtime.com/deploy-apache-web-server-using-terraform-iac/
+  https://devopsrealtime.com/deploy-scalable-vpc-architecture-on-aws-cloud/
+  https://devopsrealtime.com/deploy-html-based-static-web-application-on-aws-ec2/
+  https://devopsrealtime.com/dockerize-a-java-web-application-using-docker-compose/
+  https://devopsrealtime.com/fun-with-linux-for-cloud-devops-engineers/
+  https://devopsrealtime.com/deploy-lambda-function-to-create-weekly-ec2-ami-backup/
+  https://devopsrealtime.com/ansible-automation-to-configure-tomcat-on-multi-environment/
+  https://devopsrealtime.com/github-to-bitbucket-migration/
+  https://devopsrealtime.com/deploy-scalable-vpc-architecture-on-aws-cloud/
+  https://devopsrealtime.com/deploy-disaster-recovery-of-workloads-on-aws-warm-standby/
+
+  Jenkins:
+    https://www.toolsqa.com/jenkins/jenkins-reports/
+    https://www.fosstechnix.com/build-java-project-using-maven-in-jenkins-pipeline/
+    https://www.jenkins.io/blog/2017/02/07/declarative-maven-project/
 
 DevOps Interview qa : https://docs.google.com/document/u/0/d/1Zf01JDhLRiEGKnAydRHvpr2lyjj_AwfEZuLhmoJJ2QQ/mobilebasic?usp=gmail
 
-AWS https://docs.google.com/document/u/0/d/1Zf01JDhLRiEGKnAydRHvpr2lyjj_AwfEZuLhmoJJ2QQ/mobilebasic
+AWS
+  https://docs.google.com/document/u/0/d/1Zf01JDhLRiEGKnAydRHvpr2lyjj_AwfEZuLhmoJJ2QQ/mobilebasic
+  https://t.co/29NeWCeIHK
 AWS+DevOps: https://explore.skillbuilder.aws/learn/course/external/view/elearning/2000/getting-started-with-devops-on-aws?lado=tile&tile=dt
 
 Cka : https://github.com/alifiroozi80/CKA
@@ -73,3 +93,13 @@ https://www.beamjobs.com/resumes/devops-resume-samples
 https://docs.google.com/spreadsheets/d/1eE-NhZQFr545LkP4QNhTgXcZTtkMFeEPNyVXAflXia0/edit#gid=891834841
 
 DevOps 90 days challenge : https://github.com/LondheShubham153/90DaysOfDevOps
+
+Readymade Code in :
+    ansible.com
+
+UCD :
+  Build a pipeline with Jenkins, Dependency Based Build, and UrbanCode Deploy - IBM Developer
+    https://developer.ibm.com/tutorials/build-a-pipeline-with-jenkins-dependency-based-build-and-urbancode-deploy/
+  GitHub, Jenkins and UrbanCode Deploy Integration - UrbanCode 
+    http://bertucci.org/github-jenkins-and-urbancode-deploy-integration/
+  
