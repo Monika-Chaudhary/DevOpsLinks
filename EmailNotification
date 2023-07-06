@@ -1,0 +1,43 @@
+firstly set up SMTP things on jenkins 
+
+
+node{
+
+  def appName = "nameAsSonarQubeJobForProject"
+
+  try{
+    stage('stageName'){
+      //lines Of Code
+      emailext to: 'monikachaudhary705@gmail.com',
+      subject: "Build Success : ${JOB_NAME} #${BUILD_NUMBER}",
+      body: """Dear All,
+
+${appName} application build successfully with build no. ${BUILD_NUMBER}
+
+Below is build log for reference:
+${BUILD_URL}console
+
+Link for Quality review : http://sonarAddress:port/dashboard?id=${appName}
+
+Test Report : ${BUILD_URL}testReport
+
+Code Coverage : ${BUILD_URL}coverage
+
+Thanks & Regards,
+Jenkins Administration"""
+    }
+  }catch(Exception e){
+      emailext to: 'monikachaudhary705@gmail.com',
+      subject: "Build Failure : ${JOB_NAME} #${BUILD_NUMBER}",
+      body: """Dear All,
+
+${appName} application has been failed with build no. ${BUILD_NUMBER}
+
+Below is build log for reference:
+${BUILD_URL}console
+
+Thanks & Regards,
+Jenkins Administration"""
+  error "Failed at 'stageName', exiting now..."
+  }  
+}
