@@ -29,6 +29,9 @@ Linux-
   https://www.xmind.net/m/WwtB/
   cheatsheet : https://medium.com/@swapnilingale31/linux-commands-cheatsheet-cac3c70845e2
   free course : https://training.linuxfoundation.org/resources/
+  https://linuxhandbook.com/create-systemd-services/amp/
+  https://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users
+  https://www.howtogeek.com/442101/how-to-move-your-linux-home-directory-to-another-hard-drive/
 
 Git Repo-
   https://github.com/shreys7/django-todo
@@ -39,6 +42,13 @@ Git Repo-
 
 Git-
   https://gitexplorer.com/
+  Create empty branch in git
+    https://stackoverflow.com/questions/13969050/creating-a-new-empty-branch-for-a-new-project
+    https://jira.atlassian.com/browse/SRCTREEWIN-8976
+    https://stackoverflow.com/questions/34100048/create-empty-branch-on-github
+    https://gist.github.com/ozh/4734410
+  https://www.jetbrains.com/help/webstorm/apply-changes-from-one-branch-to-another.html#rebase-branch
+  https://linuxhint.com/branch-merge-operation-git/
 
 Shell-
   https://www.shell.how/
@@ -71,6 +81,14 @@ DevOps Projects :-
     https://www.toolsqa.com/jenkins/jenkins-reports/
     https://www.fosstechnix.com/build-java-project-using-maven-in-jenkins-pipeline/
     https://www.jenkins.io/blog/2017/02/07/declarative-maven-project/
+    Email notification in jenkins
+      https://www.edureka.co/blog/email-notification-in-jenkins/?amp
+      https://www.oreilly.com/library/view/jenkins-2-up/9781491979587/ch04.html
+      https://unixcop.com/how-to-configure-email-notification-in-jenkins/
+    Install Jenkins using war file and upgrade to new version 
+      https://linuxhint.com/install-jenkins-with-war-files/
+      https://www.thegeekstuff.com/2016/06/upgrade-jenkins-and-plugins/
+    https://stackoverflow.com/questions/55123079/how-to-set-environment-variables-in-a-jenkins-scripted-pipeline
 
 DevOps Interview qa : https://docs.google.com/document/u/0/d/1Zf01JDhLRiEGKnAydRHvpr2lyjj_AwfEZuLhmoJJ2QQ/mobilebasic?usp=gmail
 
@@ -101,6 +119,13 @@ Readymade Code in :
 UCD :
   Build a pipeline with Jenkins, Dependency Based Build, and UrbanCode Deploy - IBM Developer
     https://developer.ibm.com/tutorials/build-a-pipeline-with-jenkins-dependency-based-build-and-urbancode-deploy/
+    https://community.ibm.com/community/user/wasdevops/blogs/osman-burucu/2022/07/12/jenkins-integration-with-ibm-urbancode-deploy 
+    https://www.ibm.com/support/pages/how-integrate-urbancode-deploy-jenkins-continuous-integration
+    https://stackoverflow.com/questions/61746896/how-to-integrate-ucd-in-jenkins-pipeline
   GitHub, Jenkins and UrbanCode Deploy Integration - UrbanCode 
     http://bertucci.org/github-jenkins-and-urbancode-deploy-integration/
-  
+
+
+JUnit Testing
+https://stackoverflow.com/questions/16669507/run-junit-tests-automatically-in-jenkins-without-maven-or-ant
+https://stackoverflow.com/questions/2235276/how-to-run-junit-test-cases-from-the-command-line
