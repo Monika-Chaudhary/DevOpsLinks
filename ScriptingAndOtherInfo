@@ -1,0 +1,26 @@
+Script:
+Today date : $(date +"%d/%m/%y")
+Minus from date : $(date -d "-6 day" "+%d/%m/%y")
+$(date -d "-6 day" "+%d/%m/%Y")
+
+#!/bin/bash
+filePath='filePath'
+count=`grep '$(date +"%d/%m/%y")\|string\|string' "$filePath" | wc -l`
+if [ $count==7 ]
+then
+    echo "msg"
+else
+    echo "msg"
+fi
+
+Generate key:
+    ssh-keygen -t rsa -f fileName
+
+Stage of Jenkins:
+      1. checkout & fetch
+      2. Quality view analysis
+      3. Automated JUnit Testing
+      4. Build EAR
+      5. Upload EAR artifact to Repository
+      6. UCD-Deploy to specific environment
+      7.Smoke Test
