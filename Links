@@ -49,8 +49,6 @@ Git-
     https://gist.github.com/ozh/4734410
   https://www.jetbrains.com/help/webstorm/apply-changes-from-one-branch-to-another.html#rebase-branch
   https://linuxhint.com/branch-merge-operation-git/
-  Generate key
-    ssh-keygen -t rsa -f fileName
 
 Shell-
   https://www.shell.how/
@@ -91,14 +89,6 @@ DevOps Projects :-
       https://linuxhint.com/install-jenkins-with-war-files/
       https://www.thegeekstuff.com/2016/06/upgrade-jenkins-and-plugins/
     https://stackoverflow.com/questions/55123079/how-to-set-environment-variables-in-a-jenkins-scripted-pipeline
-    Stage of Jenkins
-      1. checkout & fetch
-      2. Quality view analysis
-      3. Automated JUnit Testing
-      4. Build EAR
-      5. Upload EAR artifact to Repository
-      6. UCD-Deploy to specific environment
-      7.Smoke Test
 
 DevOps Interview qa : https://docs.google.com/document/u/0/d/1Zf01JDhLRiEGKnAydRHvpr2lyjj_AwfEZuLhmoJJ2QQ/mobilebasic?usp=gmail
 
@@ -110,14 +100,14 @@ AWS+DevOps: https://explore.skillbuilder.aws/learn/course/external/view/elearnin
 Cka : https://github.com/alifiroozi80/CKA
 
 resumes:
-https://resumeworded.com/devops-resume-examples
-https://lh3.googleusercontent.com/-wRbZaEi9ffc/Xz0ossMVzZI/AAAAAAAADzI/qyw4fPLZApAu_JV-TLusl05rsfWs6XQjQCK8BGAsYHg/s512/2020-08-19.png
-https://novoresume.com/career-blog/devops-resume-example
-https://enhancv.com/resume-examples/devops-engineer/
-https://www.beamjobs.com/resumes/devops-resume-samples
-https://www.livecareer.com/resume/examples/computer-software/devops-engineer
-https://www.beamjobs.com/resumes/devops-resume-samples
-my resume : https://www.jobseeker.com/app/resumes/f0371a01-f3f5-4248-bc1f-1f73fd3c78aa/edit?fullscreenPreview=1
+  https://resumeworded.com/devops-resume-examples
+  https://lh3.googleusercontent.com/-wRbZaEi9ffc/Xz0ossMVzZI/AAAAAAAADzI/qyw4fPLZApAu_JV-TLusl05rsfWs6XQjQCK8BGAsYHg/s512/2020-08-19.png
+  https://novoresume.com/career-blog/devops-resume-example
+  https://enhancv.com/resume-examples/devops-engineer/
+  https://www.beamjobs.com/resumes/devops-resume-samples
+  https://www.livecareer.com/resume/examples/computer-software/devops-engineer
+  https://www.beamjobs.com/resumes/devops-resume-samples
+  my resume : https://www.jobseeker.com/app/resumes/f0371a01-f3f5-4248-bc1f-1f73fd3c78aa/edit?fullscreenPreview=1
 
 https://docs.google.com/spreadsheets/d/1eE-NhZQFr545LkP4QNhTgXcZTtkMFeEPNyVXAflXia0/edit#gid=891834841
 
