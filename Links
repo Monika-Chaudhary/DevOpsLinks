@@ -49,6 +49,8 @@ Git-
     https://gist.github.com/ozh/4734410
   https://www.jetbrains.com/help/webstorm/apply-changes-from-one-branch-to-another.html#rebase-branch
   https://linuxhint.com/branch-merge-operation-git/
+  Generate key
+    ssh-keygen -t rsa -f fileName
 
 Shell-
   https://www.shell.how/
@@ -89,6 +91,14 @@ DevOps Projects :-
       https://linuxhint.com/install-jenkins-with-war-files/
       https://www.thegeekstuff.com/2016/06/upgrade-jenkins-and-plugins/
     https://stackoverflow.com/questions/55123079/how-to-set-environment-variables-in-a-jenkins-scripted-pipeline
+    Stage of Jenkins
+      1. checkout & fetch
+      2. Quality view analysis
+      3. Automated JUnit Testing
+      4. Build EAR
+      5. Upload EAR artifact to Repository
+      6. UCD-Deploy to specific environment
+      7.Smoke Test
 
 DevOps Interview qa : https://docs.google.com/document/u/0/d/1Zf01JDhLRiEGKnAydRHvpr2lyjj_AwfEZuLhmoJJ2QQ/mobilebasic?usp=gmail
 
