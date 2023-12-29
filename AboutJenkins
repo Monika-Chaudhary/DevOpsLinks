@@ -1,0 +1,12 @@
+1. Download jenkins war file
+
+2. See compatible requirements for system and java
+
+3. Log in as root user then create  /var/lib/jenkins2 directory
+
+4. export JENKINS_HOME=/var/lib/jenkins2
+
+5. go to /var/lib/jenkins2
+	then put jenkins.war file here and run command : java -jar jenkins.war 
+
+	if want to use another port then execute : java -jar jenkins.war --httpPort=8085
