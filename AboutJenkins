@@ -10,3 +10,7 @@
 	then put jenkins.war file here and run command : java -jar jenkins.war 
 
 	if want to use another port then execute : java -jar jenkins.war --httpPort=8085
+
+6. Go to browser to access jenkins by http://localhost:8080 (by default) or http://localhost:8085 (if give http port explicitly), now give initialized password then install plugins. After that it will ask for configure username and password
+
+7. If somehow jenkins service stopped then run same commands as installation for start service like "java -jar jenkins.war" or "java -jar jenkins.war --httpPort=8085"
