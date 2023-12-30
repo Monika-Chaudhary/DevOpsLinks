@@ -14,3 +14,52 @@
 6. Go to browser to access jenkins by http://localhost:8080 (by default) or http://localhost:8085 (if give http port explicitly), now give initialized password then install plugins. After that it will ask for configure username and password
 
 7. If somehow jenkins service stopped then run same commands as installation for start service like "java -jar jenkins.war" or "java -jar jenkins.war --httpPort=8085"
+
+
+Summary
+Having 2+ years of experience as DevOps Engineer in field of automating, configuration management, building CI/CD & DevOps process
+
+Skills
+Operating System : Linux and Windows
+Tools : Jenkins, SonarQube, Docker, Sonatype Nexus and Kubernetes
+Build Tools : Maven and Apache Ant
+Programming Languages: Java, C and Python
+Object-Oriented Programming
+Source and Version Control: Git and Github
+Unit Testing : JUnit
+Continuous Deployment
+Cloud Computing
+Network Fundamentals
+Scripting Languages
+Plan: JIRA and Confluence
+Continuous Integration
+Databases : MySQL and Oracle
+Developer Collaboration
+Maintenance and Troubleshooting
+Effective Communication
+Teamwork and Collaboration
+Creative and Innovative
+Problem Solving
+
+Jobs desc:
+
+Familiar with Software Development Life Cycle (SDLC) processes
+Created suitable DevOps channels across the organization
+Experience working on Linux based infrastructure
+Proficient with Git and Git workflows for version control (Source Code Management)
+Experience in Jenkins tool by installing, configuring and maintaining for purpose of Continuous Integration (CI)
+Good hands-on knowledge of developing CI/CD pipelines using Jenkins
+Created, implemented and improved automated CI/CD pipeline by integration of many tools to meet cross-platform
+Hands-on experience of software containerization platforms like Docker and container orchestration tool like Kubernetes
+Integrated of JUnit and Code Coverage in CI/CD pipeline for testing purpose
+Collaborated with team to determine application requirement specifications.
+Experience on continuous Build & Deployments to environments
+Static code analysis using SonarQube
+JAVA Code Coverage using JaCoCo
+Upload build artifacts to Sonatype Nexus
+Automated manual tasks through scripting languages such as Shell
+Experience on UrbanCode Deploy
+
+
+
+
