@@ -14,3 +14,50 @@
 6. Go to browser to access jenkins by http://localhost:8080 (by default) or http://localhost:8085 (if give http port explicitly), now give initialized password then install plugins. After that it will ask for configure username and password
 
 7. If somehow jenkins service stopped then run same commands as installation for start service like "java -jar jenkins.war" or "java -jar jenkins.war --httpPort=8085"
+
+
+___________________
+Implement sso in Jenkins
+Https jenkins
+
+_________
+Automatic script for Jenkins:
+
+Create a service file under /etc/systems/service/serviceName.service like jenkins https..service
+
+Data:
+[Unit]
+Description=Automate Https Jenkins (any description you can give)
+
+[Service]
+User=jenkins (username)
+ExecStart=/path/to/bin/java -jar /path/to/jenkins.war --httpPort=-1 --httpsPort=8888 --httpsKeyStore=/path/to/file.jks --httpsKeyStorePassword=change it &
+
+[Install]
+WantedBy=default.target
+
+
+Give service file as : chmod 754 /etc/systems/service/serviceName.service
+
+
+Run to enable service:
+systemctl enable serviceName.service
+
+Start service:
+systemctl start serviceName.service
+
+Check status:
+systemctl status serviceName.service
+
+Check config list:
+chkconfig --list
+
+If make any changes in service file then reload it:
+systemctl daemon-reload
+
+---
+In general 
+ExecStart=/path/to/bin/java -jar /path/to/jenkins.war --httpPort=portNo.
+
+
+_______
