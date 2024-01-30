@@ -1,0 +1,14 @@
+Upgrade java 8 to 11 on machine:
+  give root permission to all - chown -R root:root /pathToJdk-version/bin/
+    sudo update-alternatives --config java
+      (choose respective java version)
+  
+
+or
+
+  for all users, create a file by anyName.sh in /etc/profile.d -> /etc/profile.d/jdk_home.sh
+
+  export JAVA_HOME=/apps/java11/jdk-11.0.4/
+  export PATH=$JAVA_HOME/bin:$PATH
+
+  
