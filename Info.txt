@@ -11,4 +11,7 @@ or
   export JAVA_HOME=/apps/java11/jdk-11.0.4/
   export PATH=$JAVA_HOME/bin:$PATH
 
-  
+______________
+UCD:
+  need development mgr role in order to add agents to env by yourself
+
