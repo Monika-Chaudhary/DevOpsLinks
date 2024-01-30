@@ -24,5 +24,21 @@ Step 3 -
 
 To check list of certificate -
 List : keytool -list -keystore "C:\Program Files\Java\jre1.8.0_221\lib\security\cacerts"
+		or
+	go to security dir & check list
+		keytool -list -keystore cacerts | grep aliasName
+		eg. keytool -list -keystore cacerts | grep sonarqube
 
 Delete : keytool -delete -noprompt -trustcacerts -alias "nexus-ssl" -keystore "C:\Program Files\Java\jre1.8.0_221\lib\security\cacerts"
+____________________________
+
+Add cert to java path:
+	i. cd /path/to/jvm/java/lib/security  			eg. /usr/lib/jvm/java-11/lib/security
+	ii. soft link for cacerts file then -> cd /etc/pki/java/
+		then again soft link -> cd /etc/pki/ca-trust/extracted/java
+			change origin cert name : mv cacerts cacerts_orig
+			then now run this command to download cert of sonarqube or any site : curl -k -o cacerts httpsUrlCacerts
+
+	now go to scanner path of sonar to add cert:
+		i. cd /path/to/sonarscanner/jre/lib/security
+		ii. curl -k -o cacerts httpsUrlCacerts
