@@ -1,0 +1,138 @@
+Install postgresSQL:-
+
+Login as postgres-
+	su – postgres
+
+	as postgres:
+		postgresSQLFolder/pgsql/bin/initdb -D postgresSQLFolder/pgsql/data
+	
+		postgresSQLFolder/pgsql/bin/postmaster -D postgresSQLFolder/pgsql/data >logfile 2>&1 &
+
+(db server program called postmaster, postmaster must know where to find data -D refer for data)
+
+		postgresSQLFolder/pgsql/bin/psql
+			check version : postgresSQLFolder/pgsql/bin/psql -V
+			pid details : postgresSQLFolder/pgsql/data/postmaster.pid
+
+			CREATE USER username WITH ENCRYPTED PASSWORD ‘password’ ;
+			CREATE DATABASE dbname;
+			GRANT ALL PRIVILEGES ON DATABASE dbname to username;
+			exit-> \q
+exit from postgres user-> exit
+
+Edit : postgresSQLFolder/pgsql/data/pg_hba.conf
+host	dbname	username	ip/32	md5
+            (sonarqube)     (sonar)
+
+restart server 	: postgresSQLFolder/pgsql/bin/pg_ctl restart -D postgresSQLFolder/pgsql/data
+
+check status : postgresSQLFolder/pgsql/bin/pg_ctl status -D postgresSQLFolder/pgsql/data
+
+to check server running on which PID : postgresSQLFolder/pgsql/bin/pg_ctl status -D postgresSQLFolder/pgsql/data/
+
+Install java 11--> /usr/lib/jvm/jdk11/jdk-11.0.4
+
+Install Sonarqube
+
+make user : sudo useradd Sonar
+
+chown -R Sonar:Sonar sonarqubeFolderPath
+
+Edit : /etc/sysctl.conf
+vm.max_map_count=262144
+
+Edit : /etc/security/limits.conf
+Sonar	-	nofile		65536
+Sonar	-	noproc		5536
+
+go to sonar config file : /conf/sonar.properties
+sonar.jdbc.username=sonar
+sonar.jdbc.password=sonar
+sonar.jdbc.url=jdbc:postgresql://localhost/dbname?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance		{dbname - sonarqube}
+sonar.web.port=9006
+sonar.web.host=ipAddress      (like 0.0.0.0)
+sonar.web.javaOpts=-Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError
+
+Create sonar.service file inside /etc/systemd/system
+[Unit]
+Description=SonarQube service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=Sonar
+Group=sonar
+PermissionsStartOnly=true
+ExecStart=/usr/bin/nohup /usr/lib/jvm//jdk11/jdk-11.0.4/bin/java -Xms32m -Xmx32m -Djava.net.preferIPv4Stack=true -jar sonarqubeFolder/lib/sonar-application-version.jar
+StandardOutput=syslog
+LimitNoFILE=131072
+LimitNPROC=8192
+
+[Install]
+WantedBy=multi-user.target
+
+
+cp sonarFolder/bin/linux-x86-64/sonar.sh /etc/init.d
+
+sonarFolder/conf/wrapper.conf--->
+wrapper.java.command=/usr/lib/jvm//jdk11/jdk-11.0.4/bin/java
+wrapper.shutdown.timeout=300
+wrapper.jvm_exit.timeout=300
+wrapper.ignore_signals=TRUE     {add if any error like sigterm}
+
+
+
+systemctl daemon-reload
+systemctl enable sonar.service
+systemctl start sonar.service
+systemctl status sonar.service
+
+
+firewall-cmd --zone=public --permanent –add-port=portNo/tcp
+firewall-cmd --reload
+see all list -> firewall-cmd –list-all-zones
+
+
+see logs : cat sonarFolder/logs/sonar.log
+
+to see logs : journalctl -u sonar -e  {to get last page logs}
+
+_______________________
+Automatic restart script for sonar:
+
+For sonarqube:
+
+[Unit]
+Description=SonarQube service (any description you can give)
+
+[Service]
+Type=simple
+User=Sonar (username)
+Group=sonar
+PermissionsStartOnly=true 
+ExecStart=/path/to/bin/nohup /path/to/bin/java  -Xms32m -Xmx32m -Djava.net.preferIPv4Stack=true -jar /path/to/sonarFolder/lib/sonar-application-version.jar
+StandardOutput=syslog
+LimitNOFILE=131072
+LimitNPROC=8192
+
+[Install]
+WantedBy=multi-user.target
+
+______________
+Sonar Administration:
+	Marketplace : Install/Uninstall Plugins
+	
+	Project -> Management
+		Create project
+		
+		Actions -> Edit permission
+
+	For create token for projects
+		Administration ->My Account 
+			Security : generate token for projects. Instead of pass use token
+
+			Profile : user, group & global priviledge
+ 
+Quality Gates – Add condition there
+
+Rules -> standard rule follow
