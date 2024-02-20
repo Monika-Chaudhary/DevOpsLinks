@@ -1,3 +1,13 @@
+Jenkins is build orchestration tool and can integrate with UCD, GHE, JIRA,  SonarQube, Nexus, Gerrit, Veracode, Selenium,..
+Jenkins is Code Integration(Phase 1) and Continuous Integration(Phase 2)
+Jenkins compiles artifact , package artifact,...
+
+Continuous Delivery & Deployment Platform:
+	from jenkins package artifact and sent it to UCD
+		(create service account & token for application in UCD to connect with jenkins. that token will authenticate via Jenkins server)
+
+For dev & sit env we deploy through jenkins but for pre-prod & prod we use snapshot process manually
+------
 1. Download jenkins war file
 
 2. See compatible requirements for system and java
