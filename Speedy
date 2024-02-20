@@ -1,0 +1,13 @@
+show & monitor the things
+
+3 views on homepage:
+  a. Aggregated dashboard -> for labview 
+  b. Engg dashboard -> related to devops specific tool how it's working, performing, doing,...
+  c. Team dashboard -> JIRA
+        divided into 3 parts:
+          i. Engineering  ii. Speed  iii. Quality
+
+If anything buggy then take help from Speedy support
+
+Go to settings -
+  Switch speedy instance - switch between instances under value stream
