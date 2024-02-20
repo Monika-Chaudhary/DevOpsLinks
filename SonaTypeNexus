@@ -1,0 +1,8 @@
+Use of Nexus:
+  i. hosting some jars specific to applications
+  ii. host some artifact which is need for build
+  iii. storing large artifacts (need for compilation & packaging process)
+
+To create repo-
+  Repositories -> ADD
+                    Hosted repo
