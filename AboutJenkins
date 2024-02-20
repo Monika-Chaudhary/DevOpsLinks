@@ -75,3 +75,7 @@ ExecStart=/path/to/bin/java -jar /path/to/jenkins.war --httpPort=portNo.
 
 
 _______
+Multiple env Deployment with approval
+	Make group in Jenkins by adding approval list of people for respective applications
+		adding that group in ConfigurationGlobalSecurityInJenkins -> add group like OrganisationName*GroupName 
+			
