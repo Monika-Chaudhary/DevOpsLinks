@@ -7,6 +7,10 @@ Continuous Delivery & Deployment Platform:
 		(create service account & token for application in UCD to connect with jenkins. that token will authenticate via Jenkins server)
 
 For dev & sit env we deploy through jenkins but for pre-prod & prod we use snapshot process manually
+	{as per strategy anything shouldn't deployment to pre-prod & prod through Jenkins pipeline. Hence there will be end of pipeline in SIT env only.
+	For deployment in pre-prod & prod, we have to adopt release management.
+	so, we should use UCD tool to deploy code in prod & UCD process will be triggered  manually by env team or some release management team
+	}
 ------
 1. Download jenkins war file
 
