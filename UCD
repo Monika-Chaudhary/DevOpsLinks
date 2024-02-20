@@ -14,3 +14,32 @@ Pre-requisite:
 
 Add member:
   Go to profile -> Team manage -> Go to particular appl -> Click on hidden empty role (here we can edit/add/remove)
+
+Auth Token:
+  thsi token use in jenkins to connect to specific app in UCD
+
+Main Terms:
+  a. Environment
+  b. History -
+      history of all envs
+      {Under history, click on Request process of particular process, go to manifest, show version, verify this version with Component version of Snapshots}
+  c. Components -
+        {IHS owned by WAS team}
+  d. Snapshots -
+      collection of specific version of component & process
+      create once & deploy anywhere to RTLA
+      {take a picture & pass it on}
+      snapshot name - the change number will be prod change number & date as well
+
+  e. Approval of request-
+        need to check app name, requestor, why they are deploying
+
+      [in UCD there is process which is like taking a screenshot last deployment(previous version components) in pre-prod(which deployment we need to replicate in prod) that can be tested & deployed in prod]
+
+  f. createVersion-
+       showing version on UCD so it's date stamp, buildNo. from Jenkins {REST API call from UCD}
+
+  g. addVersionFiles-
+        sending or attaching that version file & then based of JSON we framed then we request the appl process
+      
+  
