@@ -1,0 +1,16 @@
+Service Account Name : SRVUCDAppNameBuildMgr
+
+It's tool for continuous delivery
+used to deploy to RTL envs whether it's monolithic or microservice appl
+work like agent based (as need to have agent installed on target env where you want to connect & deploy so it can communicate from urbancode server)
+Server -> (communicate to) Client {basically an agent or node on which UCD agent is installed, these r agentless deployment server where SSH authenticate with something like we do with Ansible but here we use agent based deployment}
+
+Help Team:
+  how to trigger deployment, map components, do approve process and create snapshots
+  create version, adding version, kick off appl process deployment to lowermost env as part of Continuous delivery
+
+Pre-requisite:
+  i. agent    ii. RHEL 7 or higher and AIX 6 or higher
+
+Add member:
+  Go to profile -> Team manage -> Go to particular appl -> Click on hidden empty role (here we can edit/add/remove)
