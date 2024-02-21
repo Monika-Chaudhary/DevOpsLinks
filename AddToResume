@@ -4,3 +4,7 @@ plugins install on jenkins
 ---
 explanation:
   created jenkins pipeline which integrate Ant, generate JUnit test & code coverage report then do SonarQube analysis & send coverage report to SonarQube
+  Did SAST scanning using SonarQube
+  Resolve issue : dependency for maven project & giving suggestion to dev team
+  Created CI/CD pipeline & also enhance the existing process
+  Implement in pipeline if any of stage failing then not go to another stage & failing the jenkins job also
