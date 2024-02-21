@@ -1,0 +1,6 @@
+plugins install on jenkins
+
+
+---
+explanation:
+  created jenkins pipeline which integrate Ant, generate JUnit test & code coverage report then do SonarQube analysis & send coverage report to SonarQube
