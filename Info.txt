@@ -12,6 +12,5 @@ or
   export PATH=$JAVA_HOME/bin:$PATH
 
 ______________
-UCD:
-  need development mgr role in order to add agents to env by yourself
+
 
