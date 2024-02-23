@@ -45,3 +45,5 @@ Main Terms:
 Resource Tree- When we have access to agent, we can directly assign resource tree or can ask UCD team to do needful
 
 need development mgr role in order to add agents to env by yourself
+
+Under applications -> we create env -> under env, go to resource then add agent
