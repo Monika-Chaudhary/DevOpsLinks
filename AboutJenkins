@@ -79,4 +79,6 @@ Multiple env Deployment with approval
 	Make group in Jenkins by adding approval list of people for respective applications
 		adding that group in ConfigurationGlobalSecurityInJenkins -> add group like OrganisationName*GroupName 
 		[Note : users should update their email id in GitHub profile to get mail]
+
+To notify all users about status of jenkins job, create 4 teams in GitHub : DevOps, Notifier, Approval and CodeReviewer
 			
