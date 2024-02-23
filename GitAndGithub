@@ -1,0 +1,7 @@
+Best Strategy:
+
+1. Master Repo - that has current prod code
+2. Release Repo - from feature repo create a pull request then code reviewer approve code to merge in master branch of Release repo. Thereafter automatically jenkins job run
+3. Feature Repo - forked repo from Release one, where development team work
+
+Automerge Release branch code to master branch
