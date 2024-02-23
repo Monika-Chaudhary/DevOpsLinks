@@ -9,3 +9,5 @@ explanation:
   Created CI/CD pipeline & also enhance the existing process
   Implement in pipeline if any of stage failing then not go to another stage & failing the jenkins job also
   To verify the application after deployment to incorporate as 'Smoke Test', i extended by creating functionality through script in UCD process. That script checks the logs of listener that verify scheduler running or not for application
+  Through jenkinsfile, i set component env properties as comp, ear name different so based on env, compName keep changing
+  Created jenkins pipeline that build once & deploy everywhere for one of applications
