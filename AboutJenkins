@@ -33,7 +33,7 @@ For dev & sit env we deploy through jenkins but for pre-prod & prod we use snaps
 ___________________
 Implement sso in Jenkins
 Https jenkins
-
+Shared library in jenkins
 _________
 Automatic script for Jenkins:
 
