@@ -8,9 +8,20 @@ Git : sudo apt install git
 
 Jdk
 If want to upgrade Java from 8 to 11
-	give root permission to all -> chown -R root:root /pathToJdk/bin
+	give root permission to all -> chown -R root:root /pathToJdk/bin/
 	sudo update-alternatives --config-java
 		(choose repsective java version)
+	
+	add java version to alternative:
+		check primary link for java eg. /usr/bin/java  (to check run : which java)
+		> update-alternatives --install /usr/bin/java /path/to/setNewVersion priority  (priority  like 100, 200,...)
+		> update-alternatives --config java   (now select required version)
+
+or 
+	for all users, create a file by anyName.sh in /etc/profile.d like /etc/profile.d/jdk_home.sh
+		export JAVA_HOME=/path/toJdk/
+		export PATH=$JAVA_HOME/bin:$PATH
+
 
 Maven : sudo apt-get install maven
 
