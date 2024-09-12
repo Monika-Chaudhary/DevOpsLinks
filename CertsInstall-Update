@@ -1,0 +1,24 @@
+1. First uninstall/remove previous certificate if we are going for update from /etc/pki/ca-trust/source/anchors location
+Remove : *.crt and *.pem (previous files)
+
+2. Check list : trust list | grep certName
+If same label name found
+Then remove *.cer file from /etc/ssl/certs and /etc/pki/tls/certs
+
+3. cd /etc/pki/ca-trust/source/anchors
+Run > update-ca-trust
+
+4. Again see list - trust list | grep certName
+
+5. Go to /etc/pki/ca-trust/source/anchors and put newer certificate here
+
+6. Go to /etc/pki/tls/certs
+cp /etc/pki/ca-trust/source/anchors/certName.crt /etc/pki/tls/certs.cer
+
+
+cp /etc/pli/ca-trust/source/anchors/certName.crt /etc/ssl/certs/certs.cer
+
+Give proper permission to cer file
+
+6. Now update
+> update-ca-trust
