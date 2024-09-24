@@ -55,6 +55,13 @@ Git-
     https://gist.github.com/ozh/4734410
   https://www.jetbrains.com/help/webstorm/apply-changes-from-one-branch-to-another.html#rebase-branch
   https://linuxhint.com/branch-merge-operation-git/
+  https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
+  Git restore command:
+    https://linuxhint.com/merge-two-git-repositories/
+    https://stackoverflow.com/questions/73444194/grep-between-timestamps-from-logs-in-unix
+    https://stackoverflow.com/questions/68729386/get-the-last-5-minutes-from-log-file
+    https://unix.stackexchange.com/questions/285111/how-to-extract-logs-between-the-current-time-and-the-last-15-minutes
+    https://stackoverflow.com/questions/36996709/how-to-get-time-range-in-a-log-file-in-linux
 
 Shell-
   https://www.shell.how/
