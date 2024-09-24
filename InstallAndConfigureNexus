@@ -32,3 +32,23 @@ Steps:-
       Deployment policy- Allow/Disable redeploy
    Click on 'Create repository' button
 
+7. Script to upload artifact from nexus2 to nexus3:
+
+    Go to server where nexus2 placed -> go to storage location of nexus2 (under nexusPath/sonatype-work/nexus3/storage)-> go to any repository -> create script nexusUploadScript.sh
+   #!/bin/bash
+
+   Repository=$1
+   password=$2
+   Extensions="*.jar *.ear *.war *.pom *.xml *.md *.md5 *.zip *.tar.gz anyName"
+
+   for toSearch in $Extensions;
+   do
+      for fileName in $(find . -name $toSearch);
+      do
+         length=${#fileName}
+         echo "length: $length"
+         path=${fileName:2:$length}
+         echo "Uploading Path $path"
+         curl -v -u admin:$password --upload-file $path http://ipAddrOfServer:8081/repository/$Repository/$path
+      done;
+   done;
