@@ -3,3 +3,32 @@ Pre-requisite:
 2. Put nexus & java8 package to server
 
 
+Steps:-
+1. Go to nexus/bin directory
+
+2. Check status:
+   > ./nexus status
+
+3. Start Nexus Service:
+   > nexusDir/bin start
+
+4. Change admin password
+
+5. Create blob in Nexus UI:
+   Go to settings -> Blob Stores -> Select type -> File/S3 -> name -> appName/repoName
+   Path -> /path/to/nexus/sonatype-work/nexus3/blobs/repoName
+   Click on 'Save' button
+
+6. Create Repository:
+   Go to settings -> Repository
+      type- maven2(hosted)
+      Name- repoName
+      Online- check mark accepts incoming requests
+      Version Policy-  Release/Snapshots
+      Layout Policy- Pemissive
+      Content Disposition- Inline
+      Storage- 
+        Blob Store- give related blob name
+      Deployment policy- Allow/Disable redeploy
+   Click on 'Create repository' button
+
