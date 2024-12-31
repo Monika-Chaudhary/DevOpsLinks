@@ -45,6 +45,13 @@ Jenkins :
 GoDaddy : purchase domain
 
 DockerHub
+
+To login to ibm WAS console:
+    http://machineNameOrIp:28001/ibm/console/login.jsp
+
+To connect to winSCP
+   Hostname: psmproxy.service.group
+   Username: id@machineUsername@machineAddress
 	
 
 
